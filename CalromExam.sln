@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Web
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.Web", "CalromExam\CalromExam.Web.csproj", "{20329076-930A-46A3-9A0A-211F13C651D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.Webkk", "CalromExam\CalromExam.Webkk.csproj", "{20329076-930A-46A3-9A0A-211F13C651D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.BL.Tests", "CalromExam.BL.Tests\CalromExam.BL.Tests.csproj", "{CE54488F-4223-478D-A084-B8F68A98E66F}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.DAL.ITests", "CalromExam.DAL.Tests\CalromExam.DAL.ITests.csproj", "{0ED1AA61-2BF5-486B-9BA3-571EF9025F9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.DAL", "CalromExam.DAL\CalromExam.DAL.csproj", "{F62EC198-6A16-4CE5-8148-24A56654E648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalromExam.Web", "CalromExam.Web\CalromExam.Web.csproj", "{428F8ED2-9A38-4E98-8B82-31EC3393A34E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F62EC198-6A16-4CE5-8148-24A56654E648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62EC198-6A16-4CE5-8148-24A56654E648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62EC198-6A16-4CE5-8148-24A56654E648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428F8ED2-9A38-4E98-8B82-31EC3393A34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428F8ED2-9A38-4E98-8B82-31EC3393A34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428F8ED2-9A38-4E98-8B82-31EC3393A34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428F8ED2-9A38-4E98-8B82-31EC3393A34E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

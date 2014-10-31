@@ -69,6 +69,10 @@
       <Project>{353c7301-4a5c-49ea-bd1a-7f8f9a266fb3}</Project>
       <Name>CalromExam.BL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CalromExam.DAL\CalromExam.DAL.csproj">
+      <Project>{f62ec198-6a16-4ce5-8148-24a56654e648}</Project>
+      <Name>CalromExam.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
