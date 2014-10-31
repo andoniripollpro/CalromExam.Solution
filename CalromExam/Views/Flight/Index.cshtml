@@ -1,0 +1,14 @@
+﻿@model CalromExam.Models.Flight.FlightModel
+
+@{
+    ViewBag.Title = "Flights";
+}
+
+<h2>Flights on the air</h2>
+
+<ul>
+    @foreach (CalromExam.BL.FlightEntity oneFlightEntity in @Model.FlightEntities)
+    {
+        @Html.Partial("_Flight", oneFlightEntity)
+    }
+</ul>
