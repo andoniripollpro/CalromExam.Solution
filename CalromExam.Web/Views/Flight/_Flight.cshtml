@@ -1,0 +1,26 @@
+﻿@model CalromExam.BL.FlightEntity
+
+@{
+    ViewBag.Title = "_Flight";
+}
+
+<table style="font-family:Arial; border:1px solid black; width: 300px">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td><b>Id:</b></td>
+                    <td>@Model.FlightDataId</td>
+                </tr>
+                <tr>
+                    <td><b>Destination:</b></td>
+                    <td>@Model.Destination</td>
+                </tr>
+                <tr>
+                    <td><b>Arrival date:</b></td>
+                    <td>@Model.ArrivalDate</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
