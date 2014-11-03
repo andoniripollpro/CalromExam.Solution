@@ -10,11 +10,11 @@ Code for Calrom exam interview:
 -Integration Test with Database
 -Entity framework on DAL
 -Automapper
-
+-Decuple layer with inversion of control (IoC) using Ninjet.
 
 **It is pending and hopefully I will have it next tuesday:
 -Unit Test on BL entities
--Decuple layer with inversion of control (IoC) using Ninjet.
+
 
 
 
