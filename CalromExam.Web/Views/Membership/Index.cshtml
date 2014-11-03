@@ -6,13 +6,13 @@
 
 <h2>Memberships</h2>
 
-<ul>
+<ul style="list-style-type:none">
 
     @foreach (CalromExam.BL.MembershipEntity oneMembershipEntity in @Model.MembershipEntities)
     {
         <li>
             Id: @oneMembershipEntity.MemberId Name: @oneMembershipEntity.MemberName
-        </li>        
-    }    
+        </li>
+    }
 
 </ul>

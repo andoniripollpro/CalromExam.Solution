@@ -4,11 +4,13 @@
     ViewBag.Title = "Flights";
 }
 
+@{ Html.RenderAction("Index", "MembershipWidget"); } 
+
 <h2>Flights on the air</h2>
 
 <ul>
     @foreach (CalromExam.BL.FlightEntity oneFlightEntity in @Model.FlightEntities)
     {
-        @Html.Partial("_Flight", oneFlightEntity)
+        Html.RenderPartial("_Flight", oneFlightEntity);
     }
 </ul>

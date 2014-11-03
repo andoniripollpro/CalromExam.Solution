@@ -1,0 +1,13 @@
+﻿@model List<CalromExam.BL.MembershipEntity>
+
+<div style="border-width: 2px; border-style: dotted; border-color: red; float: right; width: 300px">
+    <h4>Memberships widget</h4>
+    <ul style="list-style-type:none">
+        @foreach (CalromExam.BL.MembershipEntity oneMembershipEntity in @Model)
+        {
+            <li>
+                @oneMembershipEntity.MemberName
+            </li>
+        }
+    </ul>
+</div>
