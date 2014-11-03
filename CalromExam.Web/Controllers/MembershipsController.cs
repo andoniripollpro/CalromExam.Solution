@@ -1,19 +1,24 @@
-﻿using CalromExam.DAL.Repositiries;
-using CalromExam.Models.Flight;
+﻿using CalromExam.BL.RepositoryInterfaces;
 using CalromExam.Models.Membership;
+using CalromExam.Web;
 using System.Web.Mvc;
 
 namespace CalromExam.Controllers
 {
     public class MembershipController : Controller
     {
+        private IMembershipRepository _membershipRepository;
+
+        public MembershipController()
+        {
+            _membershipRepository = IoCManager.Resolve<IMembershipRepository>();
+        }
+
         public ActionResult Index()
         {
-            //TODO: Iversion of control using Ninject
-            MembershipRepository membershipRepository = new MembershipRepository();
             MembershipModel model = new MembershipModel()
             {
-                MembershipEntities = membershipRepository.MembershipEntities
+                MembershipEntities = _membershipRepository.MembershipEntities
             };
 
             return View(model);

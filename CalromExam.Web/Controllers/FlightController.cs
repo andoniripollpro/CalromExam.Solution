@@ -1,18 +1,23 @@
-﻿using CalromExam.DAL.Repositiries;
+﻿using CalromExam.BL.RepositoryInterfaces;
 using CalromExam.Models.Flight;
+using CalromExam.Web;
 using System.Web.Mvc;
 
 namespace CalromExam.Controllers
 {
     public class FlightController : Controller
     {
-        public ActionResult Index()
+        private IFlightRepository _flightRepository;
+
+        public FlightController()
         {
-            //TODO: Iversion of control using Ninject
-            FlightRepositoy flightRepository = new FlightRepositoy();
+            _flightRepository = IoCManager.Resolve<IFlightRepository>();
+        }
+        public ActionResult Index()
+        {           
             FlightModel model = new Models.Flight.FlightModel()
             {
-                FlightEntities = flightRepository.FlightEntities
+                FlightEntities = _flightRepository.FlightEntities
             };
 
             return View(model);

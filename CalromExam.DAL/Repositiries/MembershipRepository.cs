@@ -1,22 +1,25 @@
 ﻿using CalromExam.BL;
+using CalromExam.BL.RepositoryInterfaces;
 using System.Collections.Generic;
 
 namespace CalromExam.DAL.Repositiries
 {
-    public class FlightRepositoy
+    public class MembershipRepository : IMembershipRepository
     {
-        public List<FlightEntity> FlightEntities {
-            get {
-                List<FlightEntity> flightEntities = new List<FlightEntity>();
+        public List<MembershipEntity> MembershipEntities
+        {
+            get
+            {
+                List<MembershipEntity> membershipEnties = new List<MembershipEntity>();
                 CalromExamEntities calromExamEntities = new CalromExamEntities();
-                AutoMapper.Mapper.CreateMap<FlightData, FlightEntity>();
+                AutoMapper.Mapper.CreateMap<MembershipData, MembershipEntity>();
 
-                foreach (FlightData oneFlightData in calromExamEntities.FlightData)
+                foreach (MembershipData oneMembershipData in calromExamEntities.MembershipData)
                 {
-                    flightEntities.Add(AutoMapper.Mapper.Map<FlightEntity>(oneFlightData));
-                }                
+                    membershipEnties.Add(AutoMapper.Mapper.Map<MembershipEntity>(oneMembershipData));
+                }
 
-                return flightEntities;
+                return membershipEnties;
             }
         }
     }

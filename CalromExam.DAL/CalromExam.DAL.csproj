@@ -73,7 +73,7 @@
       <DependentUpon>CalromExamModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositiries\FlightRepositoy.cs" />
+    <Compile Include="Repositiries\FlightRepository.cs" />
     <Compile Include="Repositiries\MembershipRepository.cs" />
   </ItemGroup>
   <ItemGroup>

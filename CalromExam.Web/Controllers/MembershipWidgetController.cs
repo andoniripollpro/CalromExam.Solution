@@ -1,20 +1,20 @@
-﻿using CalromExam.DAL.Repositiries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using CalromExam.BL.RepositoryInterfaces;
 using System.Web.Mvc;
 
 namespace CalromExam.Web.Controllers
 {
     public class MembershipWidgetController : Controller
     {
-        public ActionResult Index()
-        {            
-            //TODO: Iversion of control using Ninject
-            MembershipRepository membershipRepository = new MembershipRepository();
+        private IMembershipRepository _membershipRepository;
 
-            return View(membershipRepository.MembershipEntities);
+        public MembershipWidgetController()
+        {
+            _membershipRepository = IoCManager.Resolve<IMembershipRepository>();
+        }
+
+        public ActionResult Index()
+        {
+            return View(_membershipRepository.MembershipEntities);
         }
     }
 }

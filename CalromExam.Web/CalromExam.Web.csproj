@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommonServiceLocator.NinjectAdapter">
+      <HintPath>..\packages\Ninject-3.0.0.15-release-net-4.0\extensions\CommonServiceLocator.NinjectAdapter.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
@@ -46,6 +49,9 @@
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -118,6 +124,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bindings.cs" />
     <Compile Include="Controllers\FlightController.cs" />
     <Compile Include="Controllers\MembershipWidgetController.cs" />
     <Compile Include="Global.asax.cs">
@@ -125,6 +132,7 @@
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MembershipsController.cs" />
+    <Compile Include="IoCManager.cs" />
     <Compile Include="Models\Flight\FlightModel.cs" />
     <Compile Include="Models\Membership\MembershipModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
